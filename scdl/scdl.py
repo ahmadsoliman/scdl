@@ -94,7 +94,7 @@ class scdl:
 				embed_artwork(track_filename, artwork_filename)
 				os.remove(artwork_filename)
 				track_filename_list.append(track_filename)
-			except e:
+			except Exception as e:
 				# in case of failure, just move on to next track
 				print e
 				continue
