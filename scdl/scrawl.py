@@ -33,7 +33,7 @@ for page in range(num_pages):
 print
 print colors.HEADER + "The following files were downloaded successfully:" + colors.END
 for i, filename in enumerate(downloaded_filenames):		# print all files downloaded
-	print "\t" + colors.HEADER + str(i+1) + ". " + colors.END + colors.OKBLUE + " {0}".format(filename[len(DOWNLOAD_PATH):].split('/')[1]) + colors.END
+	print unicode("\t" + colors.HEADER + str(i+1) + ". " + colors.END + colors.OKBLUE) + u" {0}".format(filename[len(DOWNLOAD_PATH):].split('/')[1]) + unicode(colors.END)
 print colors.OKGREEN + "Finished." + colors.END
 
 
